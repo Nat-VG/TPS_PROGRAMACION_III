@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Admin - Food Store</title>
+  <link rel="stylesheet" href="./admin.css" />
+</head>
+<body>
+
+  <header>
+    <h1>⚙️ Panel de Administración</h1>
+    <nav>
+      <ul>
+        <li><button type="button" id="btn-logout">Cerrar Sesión</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="user-info" id="user-info"></div>
+
+    <section>
+      <h2>Gestión de Productos</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="/Assets/hamburguesa-clasica.jpg" alt="Hamburguesa" width="50" height="50" /></td>
+            <td>Hamburguesa Clasica Completa</td>
+            <td>Hamburguesas</td>
+            <td>$9.800</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="/Assets/pizza.jpg" alt="Pizza" width="50" height="50" /></td>
+            <td>Pizza Pepperoni Familiar</td>
+            <td>Pizzas</td>
+            <td>$13.500</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="/Assets/papas-fritas-crujientes.jpg" alt="Papas fritas" width="50" height="50" /></td>
+            <td>Papas Fritas Crujientes</td>
+            <td>Papas Fritas</td>
+            <td>$6.200</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="/Assets/coca_1_5lt.jpg" alt="Coca Cola" width="50" height="50" /></td>
+            <td>Coca Cola 1.5L</td>
+            <td>Bebidas</td>
+            <td>$3.200</td>
+            <td>18</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Panel de Administración - Food Store by NVG v1.0</p>
+  </footer>
+
+  <script type="module" src="./admin.ts"></script>
+</body>
+</html>

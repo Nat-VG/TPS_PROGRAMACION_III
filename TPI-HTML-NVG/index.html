@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+</head>
+<body>
+    <header>
+        <h1>🍕 Food Store 🍕</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#mis-pedidos">Mis Pedidos</a></li>
+                <li><a href="#carrito">Carrito (0)</a></li>
+                <li><a href="admin.html">Panel Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <aside>
+            <h2>Categorías</h2>
+            <ul>
+                <li><a href="#todas">Todas</a></li>
+                <li><a href="#hamburguesas">Hamburguesas</a></li>
+                <li><a href="#pizzas">Pizzas</a></li>
+                <li><a href="#papas-fritas">Papas Fritas</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+            </ul>
+        </aside>
+
+        <section id="todas">
+            <form action="#" method="get">
+                <label for="busqueda">Buscar productos:</label>
+                <input type="search" id="busqueda" name="busqueda" placeholder="Ej: Hamburguesa Clasica">
+                <button type="submit">Buscar Producto</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Productos Destacados</h2>
+
+            <article id="hamburguesas">
+                <img src="Assets/hamburguesa-clasica.jpg" alt="Hamburguesa triple smash con cheddar" width="220" height="160">
+                <h3>Hamburguesa Clasica Completa</h3>
+                <p>Hamburguesa con queso cheddar, panceta, tomate, cebolla y lechuga fresca.</p>
+                <p>Precio: <strong>$9800.00</strong></p>
+                <button type="button">Ver Detalles</button>
+                <button type="button">Agregar al Carrito</button>
+            </article>
+
+            <article id="pizzas">
+                <img src="Assets/pizza.jpg" alt="Pizza pepperoni y albahaca" width="220" height="160">
+                <h3>Pizza Pepperoni Famiiliar</h3>
+                <p>Masa casera, salsa de tomate, pepperoni abundante y albahaca.</p>
+                <p>Precio: <strong>$13500.00</strong></p>
+                <button type="button">Ver Detalles</button>
+                <button type="button">Agregar al Carrito</button>
+            </article>
+
+            <article id="papas-fritas">
+                <img src="Assets/papas-fritas-crujientes.jpg" alt="Papas fritas crujientes listas para servir" width="220" height="160">
+                <h3>Papas Fritas crujientes</h3>
+                <p>Porcion grande de papas fritas crocantes .</p>
+                <p>Precio: <strong>$6200.00</strong></p>
+                <button type="button">Ver Detalles</button>
+                <button type="button">Agregar al Carrito</button>
+            </article>
+
+            <article id="bebidas">
+                <img src="Assets/coca_1_5lt.jpg" alt="Botella de Coca Cola sabor original de un litro y medio" width="220" height="160">
+                <h3>Coca Cola 1.5L</h3>
+                <p>Bebida cola sabor original ideal para compartir con pizzas y combos.</p>
+                <p>Precio: <strong>$3200.00</strong></p>
+                <button type="button">Ver Detalles</button>
+                <button type="button">Agregar al Carrito</button>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Food Store by NVG. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+    </footer>
+</body>
+</html>

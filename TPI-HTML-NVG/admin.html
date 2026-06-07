@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+</head>
+<body>
+    <header>
+        <h1>⚙️ Panel de Administración</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver a la Tienda</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Gestión de Productos</h2>
+
+            <p>
+                <button type="button">+ Nuevo Producto</button>
+            </p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="Assets/hamburguesa-clasica.jpg" alt="Miniatura de hamburguesa triple" width="50" height="50"></td>
+                        <td>Hamburguesa Clasica Completa</td>
+                        <td>Hamburguesas</td>
+                        <td>$9800</td>
+                        <td>12</td>
+                        <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="Assets/pizza.jpg" alt="Miniatura de pizza pepperoni" width="50" height="50"></td>
+                        <td>Pizza Pepperoni Familiar</td>
+                        <td>Pizzas</td>
+                        <td>$13500</td>
+                        <td>5</td>
+                        <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="Assets/papas-fritas-crujientes.jpg" alt="Miniatura de papas crujientes" width="50" height="50"></td>
+                        <td>Papas Fritas crujientes</td>
+                        <td>Papas Fritas</td>
+                        <td>$6200</td>
+                        <td>7</td>
+                        <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="Assets/coca_1_5lt.jpg" alt="Miniatura de Coca Cola de un litro y medio" width="50" height="50"></td>
+                        <td>Coca Cola 1.5L</td>
+                        <td>Bebidas</td>
+                        <td>$3200</td>
+                        <td>18</td>
+                        <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+    <section>
+        <details>
+            <summary>📝 Agregar Producto Rápido</summary>
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre"><strong>Nombre del Producto:</strong></label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Lomito Completo" required>
+                </p>
+
+                <p>
+                    <label for="precio"><strong>Precio:</strong></label><br>
+                    <input type="number" id="precio" name="precio" min="0" required>
+                </p>
+
+                <p>
+                    <label for="stock"><strong>Stock Inicial:</strong></label><br>
+                    <input type="number" id="stock" name="stock" min="0" required>
+                </p>
+
+                <p>
+                    <label for="categoria"><strong>Categoría:</strong></label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="hamburguesas">Hamburguesas</option>
+                        <option value="pizzas">Pizzas</option>
+                        <option value="papas">Papas Fritas</option>
+                        <option value="bebidas">Bebidas</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="descripcion"><strong>Descripción:</strong></label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="35" placeholder="Ingresa los ingredientes..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Guardar Producto</button>
+                </p>
+            </form>
+        </details>
+    </section>
+    </main>
+
+    <footer>
+        <p>Panel de Administración - Food Store by NVG v1.0</p>
+    </footer>
+</body>
+</html>

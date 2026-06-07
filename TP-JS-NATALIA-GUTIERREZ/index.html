@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍕 Food Store 🍕</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#mis-pedidos">Mis Pedidos</a></li>
+                <li><a href="#carrito" id="contador-carrito">Carrito (0)</a></li>
+                <li><a href="admin.html">Panel Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- aca JS mete las categorias con forEach -->
+        <aside>
+            <h2>Categorías</h2>
+            <ul id="lista-categorias">
+            </ul>
+        </aside>
+
+        <!-- aca van los productos, los carga main.js -->
+        <section>
+            <h2>Productos Destacados</h2>
+            <div id="seccion-productos">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Food Store by NVG. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

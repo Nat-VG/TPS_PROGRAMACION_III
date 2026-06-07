@@ -1,0 +1,39 @@
+body {
+    color: #6b10ab;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-weight: bold;
+        color: #4f15b3;
+    text-align: center;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.6;   
+    text-align: justify;
+    text-shadow: #dc3ce7;
+    text-decoration-line: underline;
+    text-decoration-color: #4b0786; 
+    text-transform: uppercase;
+    text-wrap: initial;
+
+}
+.mi-caja {
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ff0000;
+    text-align: center;
+}   
+
+.mi-otra-caja {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(213, 219, 90);
+    text-align: center;
+}   

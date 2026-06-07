@@ -1,0 +1,83 @@
+{
+    "total": 7,
+    "categorias": [
+        {
+            "id": "todas",
+            "nombre": "Todas"
+        },
+        {
+            "id": "hamburguesas",
+            "nombre": "Hamburguesas"
+        },
+        {
+            "id": "pizzas",
+            "nombre": "Pizzas"
+        },
+        {
+            "id": "papas-fritas",
+            "nombre": "Papas Fritas"
+        },
+        {
+            "id": "bebidas",
+            "nombre": "Bebidas"
+        }
+    ],
+    "productos": [
+        {
+            "nombre": "Hamburguesa Clasica Completa",
+            "descripcion": "Hamburguesa con queso cheddar, panceta, tomate, cebolla y lechuga fresca.",
+            "precio": 9800,
+            "categoria": "hamburguesas",
+            "imagen": "/Assets/hamburguesa-clasica.jpg",
+            "alt": "Hamburguesa triple smash con cheddar"
+        },
+        {
+            "nombre": "Pizza Pepperoni Familiar",
+            "descripcion": "Masa casera, salsa de tomate, pepperoni abundante y albahaca.",
+            "precio": 13500,
+            "categoria": "pizzas",
+            "imagen": "/Assets/pizza.jpg",
+            "alt": "Pizza pepperoni y albahaca"
+        },
+        {
+            "nombre": "Papas Fritas Crujientes",
+            "descripcion": "Porción grande de papas fritas crocantes.",
+            "precio": 6200,
+            "categoria": "papas-fritas",
+            "imagen": "/Assets/papas-fritas-crujientes.jpg",
+            "alt": "Papas fritas crujientes listas para servir"
+        },
+        {
+            "nombre": "Coca Cola 1.5L",
+            "descripcion": "Bebida cola sabor original ideal para compartir con pizzas y combos.",
+            "precio": 3200,
+            "categoria": "bebidas",
+            "imagen": "/Assets/coca_1_5lt.jpg",
+            "alt": "Botella de Coca Cola sabor original de un litro y medio"
+        },
+        {
+            "nombre": "Hamburguesa Doble Smash",
+            "descripcion": "Doble medallón smash con cheddar fundido, cebolla caramelizada y salsa especial.",
+            "precio": 12500,
+            "categoria": "hamburguesas",
+            "imagen": "/Assets/double_smashburger.jpg",
+            "alt": "Hamburguesa doble smash con cheddar"
+        },
+        {
+            "nombre": "Pizza Muzzarella Grande",
+            "descripcion": "Masa crocante, salsa de tomate casera y muzzarella abundante.",
+            "precio": 11000,
+            "categoria": "pizzas",
+            "imagen": "/Assets/pizzamuzzagde.jpg",
+            "alt": "Pizza muzzarella grande"
+        },
+        {
+            "nombre": "Papas con Cheddar y Bacon",
+            "descripcion": "Papas fritas cubiertas con cheddar fundido y trozos de bacon crocante.",
+            "precio": 8500,
+            "categoria": "papas-fritas",
+            "imagen": "/Assets/papas-cheddar-bacon.jpg",
+            "alt": "Papas fritas con cheddar y bacon"
+        }
+    ]
+}

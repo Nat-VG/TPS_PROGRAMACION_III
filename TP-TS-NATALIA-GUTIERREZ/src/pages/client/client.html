@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store</title>
+  <link rel="stylesheet" href="./client.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🍕 Food Store 🍕</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="contador-carrito">Carrito (0)</a></li>
+        <li><button type="button" id="btn-logout">Cerrar Sesión</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sidebar de categorias -->
+    <aside>
+      <h2>Categorías</h2>
+      <ul id="lista-categorias"></ul>
+    </aside>
+
+    <!-- Productos -->
+    <section>
+      <h2>Productos Destacados</h2>
+      <div id="seccion-productos"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Food Store by NVG. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+  </footer>
+
+  <script type="module" src="./client.ts"></script>
+</body>
+</html>
