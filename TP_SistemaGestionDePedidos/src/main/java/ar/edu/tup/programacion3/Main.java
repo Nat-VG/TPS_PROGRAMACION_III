@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class Main {
 
@@ -92,53 +91,33 @@ public class Main {
 
         List<Pedido> pedidos = List.of(pedido1, pedido2, pedido3);
 
-        System.out.println("=== 1) TOTAL DEL PEDIDO 2 ===");
+        System.out.println("Total del pedido 2:");
         System.out.printf("Total pedido 2: $%.2f%n%n", pedido2.calcularTotal());
 
-        System.out.println("=== 2) PRODUCTOS DISPONIBLES ===");
-        obtenerProductosDisponibles(productos)
-                .stream()
-                .map(producto -> producto.getNombre() + " | Stock: " + producto.getStock())
-                .forEach(System.out::println);
-
-        System.out.println("\n=== 3) CANTIDAD DE ITEMS DEL PEDIDO 2 ===");
-        int cantidadItemsPedido2 = calcularCantidadTotalItems(pedido2);
-        System.out.println("Cantidad total de items: " + cantidadItemsPedido2);
-
-        System.out.println("\n=== 4) PRODUCTOS CON STOCK MENOR A 5 ===");
-        obtenerProductosConStockMenorA(productos, 5)
-                .stream()
-                .map(producto -> producto.getNombre() + " | Stock: " + producto.getStock())
-                .forEach(System.out::println);
-
-        System.out.println("\n=== EXTRA: PEDIDOS QUE CONTIENEN COCA-COLA ===");
-        long pedidosConCocaCola = contarPedidosQueContienenProducto(pedidos, "Coca-Cola");
-        System.out.println("Cantidad de pedidos con Coca-Cola: " + pedidosConCocaCola);
-    }
-
-    private static Set<Producto> obtenerProductosDisponibles(Set<Producto> productos) {
-        return productos.stream()
+        System.out.println("Productos disponibles:");
+        productos.stream()
                 .filter(producto -> producto.getStock() > 0)
-                .collect(Collectors.toCollection(LinkedHashSet::new));
-    }
+                .map(producto -> producto.getNombre() + " | Stock: " + producto.getStock())
+                .forEach(System.out::println);
 
-    private static int calcularCantidadTotalItems(Pedido pedido) {
-        return pedido.getDetallesPedido().stream()
+        System.out.println("\nCantidad de items del pedido 2:");
+        int cantidadItemsPedido2 = pedido2.getDetallesPedido().stream()
                 .mapToInt(detallePedido -> detallePedido.getCantidad())
                 .sum();
-    }
+        System.out.println("Cantidad total de items: " + cantidadItemsPedido2);
 
-    private static Set<Producto> obtenerProductosConStockMenorA(Set<Producto> productos, int umbral) {
-        return productos.stream()
-                .filter(producto -> producto.getStock() < umbral)
-                .collect(Collectors.toCollection(LinkedHashSet::new));
-    }
+        System.out.println("\nProductos con stock menor a 5:");
+        productos.stream()
+                .filter(producto -> producto.getStock() < 5)
+                .map(producto -> producto.getNombre() + " | Stock: " + producto.getStock())
+                .forEach(System.out::println);
 
-    private static long contarPedidosQueContienenProducto(List<Pedido> pedidos, String nombreProducto) {
-        return pedidos.stream()
+        System.out.println("\nPedidos que contienen Coca-Cola:");
+        long pedidosConCocaCola = pedidos.stream()
                 .filter(pedido -> pedido.getDetallesPedido().stream()
-                        .anyMatch(detallePedido -> nombreProducto.equalsIgnoreCase(
+                        .anyMatch(detallePedido -> "Coca-Cola".equalsIgnoreCase(
                                 detallePedido.getProducto().getNombre())))
                 .count();
+        System.out.println("Cantidad de pedidos con Coca-Cola: " + pedidosConCocaCola);
     }
 }
